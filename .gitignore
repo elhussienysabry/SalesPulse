@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+build/
+dist/
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated data and databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/raw/clean/*.csv
+data/raw/messy/*.csv
+data/raw/**/_manifest.json
+data/processed/*
+!data/processed/.gitkeep
+output/*
+!output/.gitkeep
+
+# Screenshot working files
+docs/screenshots/.tmp/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
